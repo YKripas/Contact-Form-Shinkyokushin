@@ -1,0 +1,80 @@
+#layout{
+    background-color: white;
+}
+
+/*Moving the top menu to the left and making it horizontal*/
+nav {
+    float: left;
+    width: 187px;
+    margin: 0px;
+    padding: 0.5em;
+    height: 470px;
+}
+
+/*applying margins to id'content' area so it wouldnt overlap the menu*/
+#content{
+    margin-left: 200px;
+    border-left-style: solid;
+    border-width: 1px;
+    border-color: black;
+    min-height: 470px;
+}
+
+/*making sure that the next elemen after float is not floating alongside the last float*/
+footer{
+    clear: both;
+}
+
+/*adding images to the bulleted lists*/
+ul li{
+    list-style-image:url(red.gif);
+}
+
+/*Styling the bullet list of the menu*/
+nav li{
+    display: block;
+    list-style: none;
+    list-style-image: none;
+    margin-left: -2em;
+}
+
+/*Applying hovering effects to the menu links*/
+nav a:hover{
+    color: white;
+    text-decoration: underline;
+    
+}
+nav li:hover{
+    background-color: black;
+    color: red;
+}
+
+#logo{
+    background-image:url(logoresize.png);
+    /*background-size: contain;*/
+    background-color: black;
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    height: 65px;
+}
+
+/*Assigning a logo image to all h2 headings*/
+h2{
+    background-image:url(rsz_1bullet.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    height: 40px;
+}
+
+h3 span{
+    background-color: rgb(254,0,2);
+}
+
+#contact {
+    float: right;
+    border-style:double;
+    border-width:35%;
+    border-color: black;
+    margin-right: 50px;
+    padding: 5px 5px 5px 5px;
+}
