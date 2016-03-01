@@ -38,7 +38,7 @@
                         <form name="contactForm" id="contactForm" action="mailto:yuozas.kripas@ucdenver.edu" method="post">
                             <p>* indicates a required field</p>
                             <!--Starting the FIELDSET-->
-                            <fieldset id="contactFields">
+                            <fieldset id="contactFields">                           <!--CONTACT FIELDS-->
                                 <legend>Contact Information</legend>
                                 <!--Creating CONTACT FIELDS-->
                                 <label for="fName" class="blockLabel">                                        <!--FIRST NAME-->
@@ -68,6 +68,24 @@
                                 <label for="phone" class="blockLabel">Phone</label>                           <!--PHONE-->
                                 <input name="phone" id="phone" type=tel/>
                                 
+                            </fieldset>
+                            
+                            <!--OTHER INFO FIELS-->
+                            <fieldset id="otherInfo">
+                                <legend>Other Information</legend>
+                                <label class="blockLabel">
+                                How did you hear about Rocky Bear Dojo?
+                                    <select name="infoSource" id="infoSource">
+                                        <option value="talk">Word Of Mouth</option>
+                                        <option value="ads">TV or Radio Ad</option>
+                                        <option value="internet">The Internet</option>
+                                        <option value="phonebook">The Phonebook</option>
+                                        <option value="schools">College/High School</option>
+                                    
+                                    </select>
+                                </label>
+                            
+                            
                             </fieldset>
                         
                         </form>
