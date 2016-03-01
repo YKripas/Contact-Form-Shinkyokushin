@@ -1,4 +1,4 @@
-<!Doctype html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -9,6 +9,32 @@
         <title>
             Contact us at Rocky Bear Dojo
         </title>
+        
+        <style type="text/css">                                         /*STARTING THE STYLES*/
+            
+            fieldset{
+                background-color: #CCCC99;
+                border-color: black;
+                padding: 10px;
+                margin-bottom: 10px;
+                    
+            }
+                                                /*All *'s in red*/
+            fieldset span{
+                color: red;
+            }
+            
+            labels.blockLabel{                  /*ALL LABELS*/
+                display: block;
+                position: relative;
+                width: 450px;
+                margin: 12px 0px 12px 0px;
+            }
+        
+        
+        
+        
+        </style>                     
     </head>
 
         <body>
@@ -144,22 +170,21 @@
                                     <input type="checkbox" name="belts" />                   <!--BELTS CHECKBOX-->
                                         Belt System
                                     </label>
-                                    
-                                
-                                
+                                                                
                                 </fieldset>
                                 
-                                <label for="comments" class="blockLabel">Ask Us your question</label>   <!--COMMENTS BOX-->
-                                <textarea name="comments" id="comments" rows="5" cols="50" />
-                            
-                            
-                            </fieldset>
-                            <p>
+                                
+                                 <p>
                             <input type="submit" value="Submit Question" />                <!--ACTION BUTTONS-->
                             <input type="reset" value="Cancel" />
-
                            </p>
-                        
+                            
+                        <label for="comments" class="blockLabel">Ask Us your question</label>   <!--COMMENTS BOX-->
+                                <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
+                                  
+                            </fieldset>
+                            
+                           
                         </form>
                        
                     </section>
