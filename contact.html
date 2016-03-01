@@ -37,6 +37,38 @@
                         <!--Starting the Contact Form-->
                         <form name="contactForm" id="contactForm" action="mailto:yuozas.kripas@ucdenver.edu" method="post">
                             <p>* indicates a required field</p>
+                            <!--Starting the FIELDSET-->
+                            <fieldset id="contactFields">
+                                <legend>Contact Information</legend>
+                                <!--Creating CONTACT FIELDS-->
+                                <label for="fName" class="blockLabel">                                        <!--FIRST NAME-->
+                                <span>*</span>First Name </label>
+                                <input name="fName" id="fName" required="required"/>
+                                
+                                <label for="lName" class="blockLabel">                                        <!--LAST NAME-->
+                                <span>*</span>Last Name </label>
+                                <input name="lName" id="lName" required="required"  />
+                                
+                                <label for="email" class="blockLabel">                                        <!--EMAIL-->
+                                <span>*</span>Email</label>
+                                <input name="email" id="email" required="required" type=email/>
+                                
+                                <label for="street" class="blockLabel">Street</label>                         <!--STREET-->
+                                <input name="street" id="street" />
+                                
+                                <label for="city" class="blockLabel">City</label>                             <!--CITY-->
+                                <input name="city" id="city" value="Denver" />
+                                
+                                <label for="state" class="blockLabel">State</label>                           <!--STATE-->
+                                <input name="state" id="state" min="0" max="2" value="CO" />
+                                
+                                <label for="zip" class="blockLabel">Zip</label>                               <!--ZIP-->
+                                <input name="zip" id="zip"  min="0" max="10" />
+                                
+                                <label for="phone" class="blockLabel">Phone</label>                           <!--PHONE-->
+                                <input name="phone" id="phone" type=tel/>
+                                
+                            </fieldset>
                         
                         </form>
                        
