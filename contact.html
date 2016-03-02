@@ -12,6 +12,11 @@
         
         <style type="text/css">                                         /*STARTING THE STYLES*/
             
+           
+            nav{
+                height: 760px;
+            }
+            
             fieldset{
                 background-color: #CCCC99;
                 border-color: black;
@@ -24,12 +29,86 @@
                 color: red;
             }
             
-            labels.blockLabel{                  /*ALL LABELS*/
+            label.blockLabel{                  /*ALL LABELS*/
                 display: block;
                 position: relative;
                 width: 450px;
                 margin: 12px 0px 12px 0px;
             }
+            
+                        
+            .blockLabel input{                  /*FIELDS RELATED TO BLOCKLABEL*/
+                position: absolute;
+                margin-left: 80px;
+            }
+               
+            
+            #fName, #lName{
+                width: 250px;
+                /*position: absolute;
+                margin-left: 140px;*/
+            }
+            
+            #email, #street{
+                width: 350px;
+                /*position: absolute;
+                margin-left: 140px;*/
+            }
+            
+            #phone, #city{
+                width: 150px;
+                /*position: absolute;
+                margin-left: 140px;*/
+            }
+            
+            #state{
+                width: 40px;
+               /* position: absolute;
+                margin-left: 140px;*/
+            }
+            
+            #zip{
+                width: 80px;
+                /*position: absolute;
+                margin-left: 140px;*/
+            }
+            
+            #mailingList{
+                width: 450px;
+                padding: 5px;
+            }
+            
+            #interestFields{
+                position: relative;
+                width: 450px;
+                height: 120px;
+            }
+            
+            #interest1, #interest2, #interest3, #interest4, #interest5, #interest6, #interest7, #interest8, #interest9{
+                position: absolute;
+            }
+            
+            #interest1, #interest2, #interest3{
+                top: 20px;
+            }
+            
+            #interest4, #interest5, #interest6{
+                top: 50px;
+            }
+            
+            #interest7, #interest8, #interest9{
+                top: 80px;
+            }
+            #interest1,#interest4,#interest7{
+                left: 0px;
+            }
+            #interest2,#interest5,#interest8{
+                left: 140px;
+            }
+            #interest3,#interest6,#interest9{
+                left: 280px;
+            }
+            
         
         
         
@@ -67,32 +146,31 @@
                             <fieldset id="contactFields">                           <!--CONTACT FIELDS-->
                                 <legend>Contact Information</legend>
                                 <!--Creating CONTACT FIELDS-->
-                                <label for="fName" class="blockLabel">                                        <!--FIRST NAME-->
-                                <span>*</span>First Name </label>
-                                <input name="fName" id="fName" required="required"/>
+                                <label for="fName" class="blockLabel"> First Name<span>*</span>                                        <!--FIRST NAME-->
+                                <input name="fName" id="fName" required="required"/></label>
                                 
                                 <label for="lName" class="blockLabel">                                        <!--LAST NAME-->
-                                <span>*</span>Last Name </label>
-                                <input name="lName" id="lName" required="required"  />
+                                Last Name <span>*</span>
+                                <input name="lName" id="lName" required="required"  /></label>
                                 
                                 <label for="email" class="blockLabel">                                        <!--EMAIL-->
-                                <span>*</span>Email</label>
-                                <input name="email" id="email" required="required" type=email/>
+                                Email<span>*</span>
+                                <input name="email" id="email" required="required" type=email/></label>
                                 
-                                <label for="street" class="blockLabel">Street</label>                         <!--STREET-->
-                                <input name="street" id="street" />
+                                <label for="street" class="blockLabel">Street                         <!--STREET-->
+                                <input name="street" id="street" /></label>
                                 
-                                <label for="city" class="blockLabel">City</label>                             <!--CITY-->
-                                <input name="city" id="city" value="Denver" />
+                                <label for="city" class="blockLabel">City                             <!--CITY-->
+                                <input name="city" id="city" value="Denver" /></label>
                                 
-                                <label for="state" class="blockLabel">State</label>                           <!--STATE-->
-                                <input name="state" id="state" min="0" max="2" value="CO" />
+                                <label for="state" class="blockLabel">State                           <!--STATE-->
+                                <input name="state" id="state" min="0" max="2" value="CO" /></label>
                                 
-                                <label for="zip" class="blockLabel">Zip</label>                               <!--ZIP-->
-                                <input name="zip" id="zip"  min="0" max="10" />
+                                <label for="zip" class="blockLabel">Zip                               <!--ZIP-->
+                                <input name="zip" id="zip"  min="0" max="10" /></label>
                                 
-                                <label for="phone" class="blockLabel">Phone</label>                           <!--PHONE-->
-                                <input name="phone" id="phone" type=tel/>
+                                <label for="phone" class="blockLabel">Phone                           <!--PHONE-->
+                                <input name="phone" id="phone" type=tel/></label>
                                 
                             </fieldset>
                             
@@ -128,7 +206,7 @@
                                     
                                     <label id="interest1">
                                     <input type="checkbox" name="schedule" />                           <!--CLASS SCHEDULE CHECKBOX-->
-                                        The Class Schedule
+                                        Class Schedule
                                     </label>
                                     
                                     <label id="interest2">
@@ -174,13 +252,15 @@
                                 </fieldset>
                                 
                                 
-                                 <p>
+                                 
+                            
+                        <label for="comments" class="blockLabel">Ask Us your question</label>   <!--COMMENTS BOX-->
+                        <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
+                                
+                                <p>
                             <input type="submit" value="Submit Question" />                <!--ACTION BUTTONS-->
                             <input type="reset" value="Cancel" />
                            </p>
-                            
-                        <label for="comments" class="blockLabel">Ask Us your question</label>   <!--COMMENTS BOX-->
-                                <textarea name="comments" id="comments" rows="5" cols="50"></textarea>
                                   
                             </fieldset>
                             
